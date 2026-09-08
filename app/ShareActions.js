@@ -50,9 +50,7 @@ export default function ShareActions() {
     }
   }
 
-  const shareBody = encodeURIComponent(`${SHARE_TEXT}\n\n${url}`);
-  const whatsappHref = `https://wa.me/?text=${shareBody}`;
-  const facebookHref = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+  const facebookHref = "https://www.facebook.com/profile.php?id=61580171928007";
 
   return (
     <>
@@ -84,20 +82,11 @@ export default function ShareActions() {
 
         <a
           className="btn btn-ghost"
-          href={whatsappHref}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          💬 WhatsApp
-        </a>
-
-        <a
-          className="btn btn-ghost"
           href={facebookHref}
           target="_blank"
           rel="noopener noreferrer"
         >
-          👍 Facebook
+          👍 Facebook පිටුව
         </a>
       </div>
     </>

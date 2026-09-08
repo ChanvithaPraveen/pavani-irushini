@@ -10,8 +10,9 @@ section.
   so it can be dropped into posters, stories, or printed handouts.
 - **Copy URL** — the live page URL in a read-only field with a one-tap copy
   button (falls back to `execCommand` selection copy on non-secure contexts).
-- **Share** — native share sheet via the Web Share API on mobile, plus direct
-  WhatsApp and Facebook share links everywhere.
+- **Share** — native share sheet via the Web Share API on mobile.
+- **Facebook** — direct link to Pawani's Facebook page
+  (`facebook.com/profile.php?id=61580171928007`).
 
 The URL is read from `window.location` at runtime, so copy/share always point
 at whatever domain the site is actually served from — no rebuild needed after a
