@@ -54,14 +54,6 @@ export default function Home() {
       <section className="qr">
         <h2 className="section-title">📷 මෙම පිටුව බෙදාගන්න</h2>
 
-        <div className="qr-frame">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/qr.png" alt="මෙම පිටුවට යන QR කේතය" width={200} height={200} />
-        </div>
-        <p className="qr-caption">
-          QR කේතය Scan කර මෙම පිටුවට පිවිසෙන්න
-        </p>
-
         <ShareActions />
       </section>
 

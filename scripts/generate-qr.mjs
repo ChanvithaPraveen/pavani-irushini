@@ -11,7 +11,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import QRCode from "qrcode";
 
-const DEFAULT_URL = "https://pawani-irushini.vercel.app";
+const DEFAULT_URL = "https://pavani-irushini.vercel.app";
 
 const url = process.argv[2] || process.env.SITE_URL || DEFAULT_URL;
 

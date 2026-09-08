@@ -1,14 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import QRCode from "qrcode";
 
-const FALLBACK_URL = "https://pawani-irushini.vercel.app";
+const FALLBACK_URL = "https://pavani-irushini.vercel.app";
 
 const SHARE_TEXT =
   "✨ සැප්තැම්බර් 13, මේ ඉරිදා! Hiru Star Season 5 – SUPER 30 හි පවනි ඉරුෂිනි. රාත්‍රී 7.30 සිට Hiru TV – LIVE. කොළ මනාපය ලබා දෙන්න! 💚";
 
 export default function ShareActions() {
   const [url, setUrl] = useState(FALLBACK_URL);
+  const [qrSrc, setQrSrc] = useState("/qr.png");
   const [copied, setCopied] = useState(false);
   const [canNativeShare, setCanNativeShare] = useState(false);
 
@@ -16,6 +18,27 @@ export default function ShareActions() {
     setUrl(window.location.origin + window.location.pathname);
     setCanNativeShare(typeof navigator !== "undefined" && !!navigator.share);
   }, []);
+
+  // Draw the QR from the URL the page is actually served on, so it never
+  // points at a stale build-time domain.
+  useEffect(() => {
+    let cancelled = false;
+    QRCode.toDataURL(url, {
+      errorCorrectionLevel: "H",
+      margin: 2,
+      width: 1024,
+      color: { dark: "#0b0703", light: "#ffffff" },
+    })
+      .then((dataUrl) => {
+        if (!cancelled) setQrSrc(dataUrl);
+      })
+      .catch(() => {
+        // Keep the pre-generated public/qr.png already in state.
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [url]);
 
   useEffect(() => {
     if (!copied) return;
@@ -54,6 +77,12 @@ export default function ShareActions() {
 
   return (
     <>
+      <div className="qr-frame">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={qrSrc} alt="මෙම පිටුවට යන QR කේතය" width={200} height={200} />
+      </div>
+      <p className="qr-caption">QR කේතය Scan කර මෙම පිටුවට පිවිසෙන්න</p>
+
       <div className="url-row">
         <input
           id="site-url-input"
@@ -70,7 +99,7 @@ export default function ShareActions() {
       </div>
 
       <div className="share-grid">
-        <a className="btn btn-ghost" href="/qr.png" download="pawani-irushini-qr.png">
+        <a className="btn btn-ghost" href={qrSrc} download="pawani-irushini-qr.png">
           ⬇️ QR Download
         </a>
 

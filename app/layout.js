@@ -8,7 +8,7 @@ const sinhala = Noto_Sans_Sinhala({
   variable: "--font-sinhala",
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://pawani-irushini.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://pavani-irushini.vercel.app";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
