@@ -1,5 +1,6 @@
 import Image from "next/image";
 import poster from "../public/pawani-super30.jpeg";
+import ShareActions from "./ShareActions";
 
 const ANDROID_URL = "https://hiru.lk/0gPGaM";
 const IOS_URL = "https://hiru.lk/3vaMCF";
@@ -51,13 +52,17 @@ export default function Home() {
       </section>
 
       <section className="qr">
+        <h2 className="section-title">📷 මෙම පිටුව බෙදාගන්න</h2>
+
         <div className="qr-frame">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/qr.png" alt="මෙම පිටුවට යන QR කේතය" width={200} height={200} />
         </div>
         <p className="qr-caption">
-          📷 මෙම QR කේතය Scan කර මෙම පිටුවට පිවිසෙන්න
+          QR කේතය Scan කර මෙම පිටුවට පිවිසෙන්න
         </p>
+
+        <ShareActions />
       </section>
 
       <p className="tags">#PawaniIrushini #HiruStarSeason05 #HiruStar</p>
