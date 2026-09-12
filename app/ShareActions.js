@@ -6,7 +6,7 @@ import QRCode from "qrcode";
 const FALLBACK_URL = "https://pavani-irushini.vercel.app";
 
 const SHARE_TEXT =
-  "✨ සැප්තැම්බර් 13, මේ ඉරිදා! Hiru Star Season 5 – SUPER 30 හි පවනි ඉරුෂිනි. රාත්‍රී 7.30 සිට Hiru TV – LIVE. කොළ මනාපය ලබා දෙන්න! 💚";
+  "✨ සැප්තැම්බර් 13, මේ ඉරිදා රාත්‍රී 7.30 සිට Hiru TV එකේ Hiru Star Season 5 – SUPER 30 වටයේ මම ගායනා කරනවා. පුළුවන් නම් Hiru Star App එකෙන් ඔබේ කොළ මනාපය මට දෙන්න. 💚 – පවනි ඉරුෂිනි";
 
 export default function ShareActions() {
   const [url, setUrl] = useState(FALLBACK_URL);
@@ -91,7 +91,7 @@ export default function ShareActions() {
           value={url}
           readOnly
           onFocus={(e) => e.target.select()}
-          aria-label="මෙම පිටුවේ ලිපිනය"
+          aria-label="මේ පිටුවේ ලිපිනය"
         />
         <button type="button" className="btn btn-copy" onClick={copyUrl}>
           {copied ? "✅ Copy කළා" : "📋 Copy"}

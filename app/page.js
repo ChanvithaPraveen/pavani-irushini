@@ -45,8 +45,8 @@ export default function Home() {
         <p className="subhead">🌟 Hiru Star Season 5 – SUPER 30 🌟</p>
 
         <p className="body-text">
-          ආදරණීය ඔබට, Super 30 වටයේ ආරම්භක දවසේම ගීතයක් ගයන්න මට අවස්ථාව ලැබිලා
-          තියෙනවා. ❤️
+          ආදරණීය ඔබට, Super 30 වටයේ ආරම්භක දවසේම ගීතයක් ගයන්න මටත් අවස්ථාවක්
+          ලැබුණා. ඒ ගැන මම හරිම සතුටින් ඉන්නවා. ❤️
         </p>
 
         <ul className="facts">
@@ -56,8 +56,9 @@ export default function Home() {
         </ul>
 
         <p className="body-text">
-          මම ගයන වෙලාවේ ඔබේ කොළ මනාපය මට දෙන්න පුළුවන් වෙන්නේ Hiru Star App එකෙන්
-          විතරයි. ඒ නිසා පහළ තියෙන පියවර දෙක කලින්ම බලලා තියාගන්න. 💚
+          මම ගායනා කරන වෙලාවේ ඔබේ කොළ මනාපය දෙන්න පුළුවන් වෙන්නේ Hiru Star App
+          එකෙන් විතරයි. ඔබට කරදරයක් නැත්නම්, පහළ තියෙන පොඩි පියවර දෙක විතරක්
+          කලින්ම බලාගන්න. 💚
         </p>
       </section>
 
@@ -65,8 +66,8 @@ export default function Home() {
         <h2 className="section-title">📲 පියවර 1 – App එක Download කරගන්න</h2>
 
         <p className="body-text">
-          ඔබේ දුරකථනයට ගැලපෙන බොත්තම එබුවම කෙලින්ම App එක ලැබෙනවා. Download කරලා
-          ලියාපදිංචි වෙන්නත් අමතක කරන්න එපා.
+          ඔබේ දුරකථනයට ගැලපෙන බොත්තම එබුවාම කෙලින්ම App එක ලැබෙනවා. පුළුවන් නම්
+          Download කරලා ලියාපදිංචියත් වෙලා තියාගන්න.
         </p>
 
         <div className="links">
@@ -91,8 +92,9 @@ export default function Home() {
         </div>
 
         <p className="note">
-          තරගය පටන් ගන්න වෙලාවේ හැමෝම එකවර App එකට එන නිසා අන්තර්ජාලය හෙමින් වෙන්න
-          පුළුවන්. අන්තිම මොහොත දක්වා නොසිට දැන්ම Download කරගන්න.
+          තරගය පටන් ගන්න වෙලාවේ හැමෝම එකවර App එකට එන නිසා අන්තර්ජාල වේගය අඩු
+          වෙන්න පුළුවන්. ඒ නිසා අන්තිම මොහොත දක්වා නොසිට, පුළුවන් වෙලාවක දැන්ම
+          Download කරගත්තොත් හොඳයි.
         </p>
 
         <figure className="media">
@@ -105,7 +107,7 @@ export default function Home() {
             poster="/pawani-super30.jpeg"
           />
           <figcaption className="media-caption">
-            🎬 Download කරගන්නේ කොහොමද කියලා මේ වීඩියෝ එකෙන් බලාගන්න
+            🎬 Download කරගන්නේ කොහොමද කියලා මේ පොඩි වීඩියෝ එකෙන් බලාගන්න
           </figcaption>
         </figure>
       </section>
@@ -126,14 +128,20 @@ export default function Home() {
 
       <section className="card">
         <p className="body-text">
-          🙏 මේ දක්වා මා එක්ක හිටපු ඔබේ ආදරණීය සහයෝගය මේ වටයේදීත් මට දෙන්න. ඔබ
-          නැතුව මේ ගමන නෑ. ❤️
+          🙏 මේ ගමනේ මේ තැනට එන්න මට පුළුවන් වුණේ මගේ දක්ෂකම නිසා නෙවෙයි. ඔබ මට
+          දුන්න ආදරය, ඔබ කරපු ආශිර්වාදය සහ ඔබ මට විශ්වාස කරපු එක නිසා. ඒ හැම
+          දෙයක් ගැනම මගේ හදවතින්ම ඔබට ස්තූතියි.
+        
         </p>
-        <p className="sign-off">– පවනි ඉරුෂිනි</p>
+        <p className="body-text">
+          මේ වටයේදීත් ඔබේ පොඩි උදව්ව මට ලැබෙයි කියලා මම ඉතාම නිහතමානීව බලාපොරොත්තු
+          වෙනවා. ඔබ නැත්නම් මේ ගමනක් නෑ. ❤️
+        </p>
+        <p className="sign-off">ආදරෙන්, පවනි ඉරුෂිනි</p>
       </section>
 
       <section className="qr">
-        <h2 className="section-title">📷 මේ පිටුව යාළුවන්ටත් බෙදාගන්න</h2>
+        <h2 className="section-title">📷 පුළුවන් නම් මේ පිටුව යාළුවන්ටත් බෙදාගන්න</h2>
         <ShareActions />
       </section>
 
