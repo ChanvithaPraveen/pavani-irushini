@@ -45,8 +45,8 @@ export default function Home() {
         <p className="subhead">🌟 Hiru Star Season 5 – SUPER 30 🌟</p>
 
         <p className="body-text">
-          ආදරණීය ඔබට, Super 30 වටයේ ආරම්භක දවසේම ගීතයක් ගයන්න මටත් අවස්ථාවක්
-          ලැබුණා. ඒ ගැන මම හරිම සතුටින් ඉන්නවා. ❤️
+          Super 30 වටයේ ආරම්භක දවසේම ගීතයක් ගයන්න මට අවස්ථාව
+          ලැබුණා. ❤️
         </p>
 
         <ul className="facts">
@@ -57,8 +57,7 @@ export default function Home() {
 
         <p className="body-text">
           මම ගායනා කරන වෙලාවේ ඔබේ කොළ මනාපය දෙන්න පුළුවන් වෙන්නේ Hiru Star App
-          එකෙන් විතරයි. ඔබට කරදරයක් නැත්නම්, පහළ තියෙන පොඩි පියවර දෙක විතරක්
-          කලින්ම බලාගන්න. 💚
+          එකෙන් විතරයි. 💚
         </p>
       </section>
 
@@ -66,8 +65,8 @@ export default function Home() {
         <h2 className="section-title">📲 පියවර 1 – App එක Download කරගන්න</h2>
 
         <p className="body-text">
-          ඔබේ දුරකථනයට ගැලපෙන බොත්තම එබුවාම කෙලින්ම App එක ලැබෙනවා. පුළුවන් නම්
-          Download කරලා ලියාපදිංචියත් වෙලා තියාගන්න.
+          ඔබේ දුරකථනයට ගැලපෙන බොත්තම එබුවාම කෙලින්ම App එක ලැබෙනවා.
+          Download කරලා ලියාපදිංචියත් වෙලා තියන්න.
         </p>
 
         <div className="links">
@@ -107,7 +106,7 @@ export default function Home() {
             poster="/pawani-super30.jpeg"
           />
           <figcaption className="media-caption">
-            🎬 Download කරගන්නේ කොහොමද කියලා මේ පොඩි වීඩියෝ එකෙන් බලාගන්න
+            🎬 Download කරගන්නේ කොහොමද කියලා මේ පොඩි වීඩියෝ එකෙන් බලන්න
           </figcaption>
         </figure>
       </section>
@@ -128,19 +127,17 @@ export default function Home() {
 
       <section className="card">
         <p className="body-text">
-          ඔබ මට දුන්න ආදරය, ඔබ කරපු ආශිර්වාදය නිසා. ඒ හැම
-          දෙයක් ගැනම මගේ හදවතින්ම ඔබට ස්තූතියි.
-        
+          ඔබ මට දුන්න ආදරය, ආශිර්වාදය නිසා, හදවතින්ම ඔබට ස්තූතියි.
         </p>
         <p className="body-text">
-          මේ වටයේදීත් ඔබේ උදව්ව මට ලැබෙයි කියලා මම ඉතාම නිහතමානීව බලාපොරොත්තු
+          මේ වටයේදීත් ඔබේ උදව්ව මට ලැබෙයි කියලා ඉතාම නිහතමානීව බලාපොරොත්තු
           වෙනවා. ❤️
         </p>
-        <p className="sign-off">ආදරෙන්, පවනි ඉරුෂිනි</p>
+        <p className="sign-off">- පවනි ඉරුෂිනි</p>
       </section>
 
       <section className="qr">
-        <h2 className="section-title">📷 පුළුවන් නම් මේ පිටුව යාළුවන්ටත් බෙදාගන්න</h2>
+        <h2 className="section-title">📷 මේ පිටුව යාළුවන්ටත් Share කරන්න</h2>
         <ShareActions />
       </section>
 
