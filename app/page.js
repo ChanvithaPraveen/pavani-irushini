@@ -113,31 +113,7 @@ export default function Home() {
       <section className="card" id="vote">
         <h2 className="section-title">💚 පියවර 2 – මනාපය දෙන්නේ කොහොමද?</h2>
 
-        <ol className="steps">
-          <li>
-            App එකට ලියාපදිංචි වෙද්දී{" "}
-            <strong>මුහුණ පැහැදිලිව පෙනෙන ඡායාරූපයක්</strong> දාන්න. කණ්ඩායම්,
-            අපැහැදිලි හෝ ව්‍යාජ ඡායාරූප අනුමත වෙන්නේ නෑ.
-          </li>
-          <li>
-            මම ගායනා කරන්න පටන් ගන්න <strong>කලින්ම</strong> App එකට ඇවිත් ඉන්න.
-            ගායනය අතරතුර මනාප පිටුවට යන්න බෑ. මගේ ඡායාරූපය App එකේ පෙනුණු ගමන්{" "}
-            <strong>“මනාපය ප්‍රකාශ කිරීම ඇරඹේ”</strong> කියන එක Click කරලා ඉදිරියට
-            යන්න.
-          </li>
-          <li>
-            ගීතය පටන් ගත්ත ගමන් මනාපය දෙන්න පුළුවන්. මට මනාපය දෙනවා නම්{" "}
-            <strong className="green-text">කොළ පැහැති සලකුණ දකුණු පැත්තට</strong>{" "}
-            swipe කරන්න.
-          </li>
-        </ol>
-
-        <p className="note">
-          මනාපය දුන්නට පස්සේ ඊළඟ තරගකරු එනකම් App එකේම රැඳී ඉන්න. ඔබේ ඡායාරූපය
-          විශාල තිරය මත සජීවීව පෙන්නන්නත් පුළුවන්. 🌟
-        </p>
-
-        <figure className="media">
+        <figure className="media media-flush">
           <Image
             className="guide-img"
             src={voteGuide}
@@ -145,9 +121,6 @@ export default function Home() {
             placeholder="blur"
             sizes="(max-width: 720px) 100vw, 720px"
           />
-          <figcaption className="media-caption">
-            📋 Vote කිරීමේදී සැලකිලිමත් විය යුතු කරුණු
-          </figcaption>
         </figure>
       </section>
 
